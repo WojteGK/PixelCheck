@@ -1,4 +1,4 @@
 package src.main.java.pieces;
-public class knight {
+public class Knight {
    
 }

@@ -1,4 +1,4 @@
 package src.main.java.pieces;
-public class queen {
+public class Queen {
     
 }

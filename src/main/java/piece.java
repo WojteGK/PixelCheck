@@ -1,5 +1,5 @@
 package src.main.java;
 
-public class piece {
+public class Piece {
    
 }

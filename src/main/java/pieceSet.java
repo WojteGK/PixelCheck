@@ -1,4 +1,4 @@
 package src.main.java;
-public class pieceSet {
+public class PieceSet {
     
 }

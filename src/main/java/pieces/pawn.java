@@ -1,4 +1,4 @@
 package src.main.java.pieces;
-public class pawn {
+public class Pawn {
    
 }
