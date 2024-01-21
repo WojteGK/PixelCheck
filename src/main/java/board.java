@@ -29,4 +29,13 @@ class Position {
     public int getY() {
         return y;
     }
+    public void display() {
+        for (int x = 0; x < 8; x++) {
+            for (int y = 0; y < 8; y++) {
+                // Print "-" for white positions and "#" for black positions
+                System.out.print((x + y) % 2 == 0 ? "-" : "#");
+            }
+            System.out.println();
+        }
+    }
 }
