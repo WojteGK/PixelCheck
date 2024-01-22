@@ -7,14 +7,14 @@ public class King extends Piece {
     private boolean hasBeenChecked;
     private boolean hasMoved;
 
-    public King(Position position, boolean isWhite) {
-        super(position, isWhite);
+    public King(boolean isWhite) {
+        super(isWhite);
     }
 
     @Override
-    public boolean isValidMove(Position newPosition) {
-        int yPosDifference = Math.abs(newPosition.getY() - this.getPosition().getY());
-        int xPosDifference = Math.abs(newPosition.getX() - this.getPosition().getX());
+    public boolean isValidMove(Position oldPosition, Position newPosition) {
+        int yPosDifference = Math.abs(newPosition.getY() - oldPosition.getY());
+        int xPosDifference = Math.abs(newPosition.getX() - oldPosition.getX());
         if (yPosDifference > 1 || xPosDifference > 1) {
             return false;
         }
@@ -40,5 +40,10 @@ public class King extends Piece {
     @Override
     public String toString() {
         return "K";
+    }
+
+    @Override
+    public char getSymbol() {
+        return 'K';
     }
 }
